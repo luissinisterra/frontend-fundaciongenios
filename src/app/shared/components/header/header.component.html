@@ -47,19 +47,19 @@
     <!-- Menú móvil -->
     <div #asMobileMenu class="hidden md:hidden bg-gray-900 text-white">
         <nav class="flex flex-col px-6 py-6">
-            <a href="/" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+            <a [routerLink]="['/']" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
                 Inicio
             </a>
-            <a href="/proyectos" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+            <a [routerLink]="['/proyectos']" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
                 Proyectos
             </a>
-            <a href="/noticias" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+            <a [routerLink]="['/noticias']" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
                 Noticias
             </a>
-            <a href="/quienes-somos" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+            <a [routerLink]="['/quienes-somos']" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
                 Quiénes Somos
             </a>
-            <a href="/contacto" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md shadow-lg text-center transition duration-300">
+            <a [routerLink]="['/contacto']" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md shadow-lg text-center transition duration-300">
                 Contáctanos
             </a>
         </nav>
