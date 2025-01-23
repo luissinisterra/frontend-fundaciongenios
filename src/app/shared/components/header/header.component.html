@@ -3,18 +3,18 @@
     <div class="container mx-auto px-6 py-4 flex items-center justify-between">
         <!-- Logo -->
         <div class="text-2xl font-bold">
-        <a href="#inicio" class="hover:text-red-500">Fundación Genios</a>
+            <a routerLink="['/']" class="hover:text-red-500">Fundación Genios</a>
         </div>
         <!-- Navegación -->
         <nav class="hidden md:flex space-x-6">
-        <a href="#inicio" class="hover:text-red-500">Inicio</a>
-        <a href="#proyectos" class="hover:text-red-500">Proyectos</a>
-        <a href="#noticias" class="hover:text-red-500">Noticias</a>
-        <a href="#quienes-somos" class="hover:text-red-500">Quiénes somos</a>
+            <a [routerLink]="['/']" class="hover:text-red-500">Inicio</a>
+            <a [routerLink]="['/proyectos']" class="hover:text-red-500">Proyectos</a>
+            <a [routerLink]="['/noticias']" class="hover:text-red-500">Noticias</a>
+            <a [routerLink]="['/quienes-somos']" class="hover:text-red-500">Quiénes somos</a>
         </nav>
         <!-- Botón CTA -->
-        <a href="#contacto" class="hidden md:inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-6 rounded-full shadow-lg">
-        Contactanos
+        <a [routerLink]="['/proyectos']" class="hidden md:inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-6 rounded-md shadow-lg">
+            Contactanos
         </a>
         <!-- Menú móvil -->
         <button (click)="toggleMenu()" class="md:hidden text-red-500">
@@ -24,13 +24,48 @@
         </button>
     </div>
     <!-- Menú móvil -->
-    <div #asMobileMenu class="hidden md:hidden bg-gray-800 text-white">
-        <nav class="flex flex-col space-y-4 px-6 py-4">
-        <a href="#inicio" class="hover:text-red-500">Inicio</a>
-        <a href="#proyectos" class="hover:text-red-500">Proyectos</a>
-        <a href="#noticias" class="hover:text-red-500">Noticias</a>
-        <a href="#quienes-somos" class="hover:text-red-500">Quiénes somos</a>
-        <a href="#contacto" class="hover:text-red-500">Contacto</a>
+    <!-- <div #asMobileMenu class="hidden md:hidden bg-gray-800 text-white">
+        <nav class="flex flex-col space-y-4 px-6 py-8">
+            <a href="/" class="hover:bg-gray-700 bg-gray-900 py-3 px-6 rounded-lg text-center transition duration-300">
+                Inicio
+            </a>
+            <a href="/proyectos" class="hover:bg-gray-700 bg-gray-900 py-3 px-6 rounded-lg text-center transition duration-300">
+                Proyectos
+            </a>
+            <a href="/noticias" class="hover:bg-gray-700 bg-gray-900 py-3 px-6 rounded-lg text-center transition duration-300">
+                Noticias
+            </a>
+            <a href="/quienes-somos" class="hover:bg-gray-700 bg-gray-900 py-3 px-6 rounded-lg text-center transition duration-300">
+                Quiénes Somos
+            </a>
+            <a href="/contacto" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg text-center transition duration-300">
+                Contáctanos
+            </a>
+        </nav>
+    </div> -->
+
+    <!-- Menú móvil -->
+    <div #asMobileMenu class="hidden md:hidden bg-gray-900 text-white">
+        <nav class="flex flex-col px-6 py-6">
+            <a href="/" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+                Inicio
+            </a>
+            <a href="/proyectos" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+                Proyectos
+            </a>
+            <a href="/noticias" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+                Noticias
+            </a>
+            <a href="/quienes-somos" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+                Quiénes Somos
+            </a>
+            <a href="/contacto" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md shadow-lg text-center transition duration-300">
+                Contáctanos
+            </a>
         </nav>
     </div>
+  
 </header>
+
+
+  
