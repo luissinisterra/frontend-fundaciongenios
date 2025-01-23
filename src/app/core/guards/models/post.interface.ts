@@ -3,9 +3,4 @@ export interface IPost {
   title: string;
   description: string;
   image: string;
-
-  getId(): number;
-  getTitle(): string;
-  getDescription(): string;
-  getImage(): string;
 }
