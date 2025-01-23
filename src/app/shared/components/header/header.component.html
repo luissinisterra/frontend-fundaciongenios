@@ -3,11 +3,11 @@
     <div class="container mx-auto px-6 py-4 flex items-center justify-between">
         <!-- Logo -->
         <div class="text-2xl font-bold">
-            <a routerLink="['/']" class="hover:text-red-500">Fundación Genios</a>
+            <a [routerLink]="['/']" class="hover:text-red-500">Fundación Genios</a>
         </div>
         <!-- Navegación -->
         <nav class="hidden md:flex space-x-6">
-            <a [routerLink]="['/']" class="hover:text-red-500">Inicio</a>
+            <!-- <a [routerLink]="['/']" class="hover:text-red-500">Inicio</a> -->
             <a [routerLink]="['/proyectos']" class="hover:text-red-500">Proyectos</a>
             <a [routerLink]="['/noticias']" class="hover:text-red-500">Noticias</a>
             <a [routerLink]="['/quienes-somos']" class="hover:text-red-500">Quiénes somos</a>
@@ -47,9 +47,9 @@
     <!-- Menú móvil -->
     <div #asMobileMenu class="hidden md:hidden bg-gray-900 text-white">
         <nav class="flex flex-col px-6 py-6">
-            <a [routerLink]="['/']" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
+            <!-- <a [routerLink]="['/']" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
                 Inicio
-            </a>
+            </a> -->
             <a [routerLink]="['/proyectos']" class="hover:bg-gray-700 bg-gray-900 border border-gray-600 py-3 px-6 rounded-md text-center mb-2 transition duration-300">
                 Proyectos
             </a>
