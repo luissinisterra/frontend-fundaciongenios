@@ -15,4 +15,8 @@ export class ApiService {
     return this.http.get<IPost[]>(this.apiUrl);
   }
 
+  getPostById(id: number): Observable<IPost> {
+    return this.http.get<IPost>(`${this.apiUrl}/${id}`);
+  }
+
 }
