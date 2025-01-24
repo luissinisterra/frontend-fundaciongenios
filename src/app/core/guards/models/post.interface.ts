@@ -3,4 +3,6 @@ export interface IPost {
   title: string;
   description: string;
   image: string;
+  created_at: any;
+  updated_at: any;
 }
