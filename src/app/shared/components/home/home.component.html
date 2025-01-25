@@ -1,122 +1,181 @@
 <!-- Hero Section -->
-<section id="inicio" class="bg-gray-800 text-white py-20">
-  <div class="container mx-auto px-6 text-center">
+<section class="relative bg-gray-800 text-white py-20 bg-center bg-cover" style="background-image: url('images/5d0b9a73-f103-43b1-b6e7-c2cf36113b05.jpeg');">
+  <!-- Overlay para oscurecer el fondo -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Contenido de la sección -->
+  <div class="relative z-10 container mx-auto px-6 text-center">
     <h1 class="text-5xl font-extrabold">Bienvenido a nuestro Blog</h1>
-    <p class="text-lg text-gray-300 mt-4">Descubre las últimas noticias, proyectos e iniciativas que marcan la diferencia. </p> 
+    <p class="text-lg text-gray-300 mt-4">
+      Descubre las últimas noticias, proyectos e iniciativas que marcan la diferencia.
+    </p>
     <br>
-    <p class="text-lg text-gray-300 mt-4">La Fundación Genios ofrece programas de educación en
-      programación, artes, idiomas, pensamiento lógico, ciencia y música
-      para niños y jóvenes. Estos cursos están diseñados para fomentar el desarrollo de
-      habilidades críticas y creativas, preparando a los estudiantes para un futuro exitoso. La
-      matrícula tiene un costo de <span class="font-semibold text-red-500">100.000 pesos mensuales</span>,
-      incluyendo acceso a todos los recursos y clases.</p>
+    <p class="text-lg text-gray-300 mt-4">
+      La Fundación Genios ofrece programas de educación en programación, artes, idiomas, pensamiento lógico, ciencia y música para niños y jóvenes. 
+      Estos cursos están diseñados para fomentar el desarrollo de habilidades críticas y creativas, preparando a los estudiantes para un futuro exitoso. 
+      La matrícula tiene un costo de <span class="font-semibold text-red-500">100.000 pesos mensuales</span>, incluyendo acceso a todos los recursos y clases.
+    </p>
     <a href="#proyectos" class="mt-6 inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full shadow-lg">
       Explora Proyectos
     </a>
   </div>
 </section>
 
-<!-- Proyectos Section -->
-<section id="proyectos" class="py-16">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-extrabold text-center text-gray-800">Nuestros Proyectos</h2>
-    <p class="text-lg text-gray-600 text-center mt-4">Conoce las iniciativas que están cambiando el mundo.</p>
-    <div class="grid gap-8 lg:grid-cols-3 mt-10">
-      <!-- Proyecto 1 -->
-      <div class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-300">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,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');"></div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 group-hover:text-red-500">Fundación Genios</h3>
-          <p class="text-gray-600 mt-2">Educación para niños con grandes capacidades.</p>
-          <a href="#proyectos" class="text-red-500 hover:underline mt-4 block">Ver más</a>
-        </div>
+
+<section class="py-12 bg-gray-50">
+  <div class="container mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <!-- Columna Izquierda: Imagen -->
+      <div class="flex justify-center">
+        <img src="images/folleto-fundaciongenios.jpeg" alt="Fundación Genios" class="w-full max-w-md lg:max-w-lg rounded-lg shadow-lg">    
       </div>
-      <!-- Proyecto 2 -->
-      <div class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-300">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,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');"></div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 group-hover:text-red-500">Código Fuente</h3>
-          <p class="text-gray-600 mt-2">Enseñamos programación para cambiar vidas.</p>
-          <a href="#proyectos" class="text-red-500 hover:underline mt-4 block">Ver más</a>
-        </div>
-      </div>
-      <!-- Proyecto 3 -->
-      <div class="group bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition duration-300">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,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');"></div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 group-hover:text-red-500">Proyecto Inspirador</h3>
-          <p class="text-gray-600 mt-2">Generamos cambios positivos en la sociedad.</p>
-          <a href="#proyectos" class="text-red-500 hover:underline mt-4 block">Ver más</a>
-        </div>
+
+      <!-- Columna Derecha: Servicios -->
+      <div class="flex flex-col">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Nuestros Servicios</h2>
+        <p class="mt-4 text-lg text-gray-600">Abrimos puertas a un mundo de aprendizaje y creatividad. Estos son algunos de los servicios que ofrecemos:</p>
+        
+        <!-- Lista de Servicios -->
+        <ul class="mt-6 space-y-4">
+          <li class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-red-500 text-white rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-6 4v6h6v-6h2a2 2 0 002-2V9a2 2 0 00-2-2h-6a2 2 0 00-2 2v6z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Desarrollo de Software</h3>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-blue-500 text-white rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-6 4v6h6v-6h2a2 2 0 002-2V9a2 2 0 00-2-2h-6a2 2 0 00-2 2v6z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Desarrollo de Videojuegos</h3>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-green-500 text-white rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-6 4v6h6v-6h2a2 2 0 002-2V9a2 2 0 00-2-2h-6a2 2 0 00-2 2v6z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Lógica Computacional</h3>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-yellow-500 text-white rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-6 4v6h6v-6h2a2 2 0 002-2V9a2 2 0 00-2-2h-6a2 2 0 00-2 2v6z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Robótica y Electrónica</h3>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-purple-500 text-white rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-6 4v6h6v-6h2a2 2 0 002-2V9a2 2 0 00-2-2h-6a2 2 0 00-2 2v6z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Diseño Gráfico</h3>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+          </li>
+        </ul>
+        <h3 class="text-lg font-bold text-red-500">Entre muchas disciplinas mas.</h3>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Blog Section -->
-<section id="blog" class="bg-gray-800 py-16">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-extrabold text-center text-white">Últimas Noticias</h2>
-    <p class="text-lg text-gray-300 text-center mt-4">Mantente informado sobre nuestros avances.</p>
-    <div class="grid gap-8 lg:grid-cols-3 mt-10">
-      <!-- Blog 1 -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,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');"></div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800">Nueva Alianza Estratégica</h3>
-          <p class="text-gray-600 mt-2">Anunciamos nuestra alianza para llevar educación a más comunidades.</p>
-          <a href="#" class="text-red-500 hover:underline mt-4 block">Leer más</a>
+<section class="py-12 bg-gray-50">
+  <div class="container mx-auto px-6 lg:px-8">
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Galeria de Videos</h2>
+      <p class="mt-2 text-base text-gray-600">Explora nuestras noticias destacadas en formato multimedia.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Video -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300 overflow-hidden">
+        <div class="block aspect-w-16 aspect-h-9 bg-black">
+          <video class="object-cover w-full h-[600px]" controls>
+            <source src="videos/video-musica.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 hover:text-red-500">Clásicos de Música</h3>
         </div>
       </div>
-      <!-- Blog 2 -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBhUIBxEVFREVFhgaFxUWFRYYGhcaIBcXFiUWHxgYHSggGB8lHRYVITEhJSkrLy4uGB8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQQFAwIGB//EADIQAQABAwIDBQUIAwAAAAAAAAABAgMRBAUSITEUQVFxwRNhkbHRBiIygaHh8PEVI4L/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEJUd01nZbOKPx1co+oPc7jpo1PZ8zxZx05Z8MrFy5RatzXcnER1l8zasVafdKLVfXNOfOcT6tD7R3Zi3Ra7pmZn8sfUFiN50c18MzPnicfVfpqprp4qZzE9JZV/b7FO0ZppjiimKuLvzjP1V9HqqqNluRE86ZxH/X8kGhd3fSWq+DMzjriFrT6i1qbftLM5j+dzK2PR2Lulm5epiczMc+6MQ47PM2N0qsd08UfCf7BvqtncdNev+womeLnymMdO5bYm+aWq1cjW2PGM+fiDXv3qNPam7dnEQ8aXVWtXRNVnOI8YwxNXqrm6XKLFqPPz758ob2ns0aezFq30j+ZBN25Rao47k4iO+VCretHFWI4p9+Pqv3bdN23Nu5GYmObPuW9qsW5or4OXKY61fUF3T6mzqaOOzOY+X5Oer1+n0k8N6efhHOWd9nLNyKqrs8qZiI85y4aKinXbvVVejMfenE/CI+QNfSbhp9XVw2p5+Exj+3bUai1prftL04hhbtbp0Wvpu6eMdJxHjHJ63uv2+4UWY6Yj9Z/oGhZ3fSXa+DMx5xy+Pc0GLvWis2tHFdmmImJiOXfHRe2m7N3b6aquvOPhOPlgFwAAAAAAAAAAAAAB8z2yqdwnVX6Jqx+GPDwfSpB8rd1c3Nx7Vw450zw+URHos71XOosWtRMYzE8vDn+y9e225c3PtcVRjNM4555REei3rNLRq7Hsq/OJ8J8QcdTdp/w83O6bcfrGGRpbc1bPdqjxp/Sc+qx/htVNPsqrkcGff8AJrafS27Gm7PTzpxz9+eoKf2fqidDMeFU+kqO2/7d7munpmufnHq7VbNqLdc9kuYpn3zE+XLqvbbt9OipmZnNU9Z9IBdZO+6vho7Lb/FV18vD82rOccmZptsuU63tWqqiqesYz1/YGdRTe2jV03LnOJjn6x5w+joqprpiqjnE9JcNw0kazT+znlPWJ8JeNs017SWvZXaomO7GeXuBcZ+o2fTXq5rmaoqnnnPphY12mnVaabVM4nMTnHgzJ2vcKqeCbvLzqBGx6u9OonT3KuKnE4z3Y8HLZ/8AVutVurr96PhP7NPbtuo0UTVnNU9+McvCHHX7XN6/2jT1cNXf5+OY6Ap/aKri1VNEdYp+co3Sn2O60VVdPuT8Jx6Lek2munUe31dfFMc8c+vvmVrcdBRrbfOcVR0n0kHHf64p2/HjMfV72Omadtpz3zM/r+ynGz6i5MRqLn3Y85+GejZt0U26Ioo6RGIB6AAAAAAAAAAAAAAAAQkBCQBCQAAAAAQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//Z');"></div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800">Eventos Recientes</h3>
-          <p class="text-gray-600 mt-2">Participaron más de 500 personas en nuestro último taller.</p>
-          <a href="#" class="text-red-500 hover:underline mt-4 block">Leer más</a>
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300 overflow-hidden">
+        <div class="block aspect-w-16 aspect-h-9 bg-black">
+          <video class="object-cover w-full h-[600px]" controls>
+            <source src="videos/video-ajedrez.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 hover:text-red-500">Partidas de Ajedrez</h3>
         </div>
       </div>
-      <!-- Blog 3 -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,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');"></div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800">Impacto Social</h3>
-          <p class="text-gray-600 mt-2">Resultados de nuestro último proyecto superaron expectativas.</p>
-          <a href="#" class="text-red-500 hover:underline mt-4 block">Leer más</a>
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition duration-300 overflow-hidden">
+        <div class="block aspect-w-16 aspect-h-9 bg-black">
+          <video class="object-cover w-full h-[600px]" controls>
+            <source src="videos/video-programacion.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 hover:text-red-500">Programación de Video Juegos</h3>
         </div>
       </div>
+      <!-- Repetir según el número de videos -->
     </div>
   </div>
 </section>
 
 <!-- Testimonios Section -->
-<section class="bg-gray-800 py-16">
+<section class="bg-gray-100 py-16">
   <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-extrabold text-white">Lo que dicen de nosotros</h2>
-    <p class="text-gray-400 text-lg mt-4">Conoce las historias de las personas que han sido impactadas por nuestros proyectos.</p>
+    <h2 class="text-3xl font-extrabold">Lo que dicen de nosotros</h2>
+    <p class="text-gray-600 text-lg mt-4">Conoce las historias de las personas que han sido impactadas por nuestros proyectos.</p>
 
     <!-- Testimonios -->
     <div class="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <!-- Testimonio 1 -->
-      <div class="bg-gray-700 text-white rounded-lg p-6 shadow-lg">
+      <div class="rounded-lg p-6 shadow-lg">
         <img src="https://imagenes.eleconomista.com.mx/files/image_768_768/uploads/2022/01/06/66e47876670e1.jpeg" alt="Persona 1" class="w-16 h-16 mx-auto rounded-full mb-4">
         <h3 class="text-xl font-bold">Juan Pérez</h3>
-        <p class="text-gray-300 mt-2">"Gracias a Fundación Genios, mi hijo tiene acceso a la educación que siempre soñé."</p>
+        <p class="mt-2">"Gracias a Fundación Genios, mi hijo tiene acceso a la educación que siempre soñé."</p>
       </div>
 
       <!-- Testimonio 2 -->
-      <div class="bg-gray-700 text-white rounded-lg p-6 shadow-lg">
+      <div class="rounded-lg p-6 shadow-lg">
         <img src="https://imagenes.eleconomista.com.mx/files/image_768_768/uploads/2022/01/06/66e47876670e1.jpeg" alt="Persona 2" class="w-16 h-16 mx-auto rounded-full mb-4">
         <h3 class="text-xl font-bold">María López</h3>
-        <p class="text-gray-300 mt-2">"Código Fuente me ayudó a aprender a programar y cambiar mi vida profesional."</p>
+        <p class="mt-2">"Código Fuente me ayudó a aprender a programar y cambiar mi vida profesional."</p>
       </div>
 
       <!-- Testimonio 3 -->
-      <div class="bg-gray-700 text-white rounded-lg p-6 shadow-lg">
+      <div class="rounded-lg p-6 shadow-lg">
         <img src="https://imagenes.eleconomista.com.mx/files/image_768_768/uploads/2022/01/06/66e47876670e1.jpeg" alt="Persona 3" class="w-16 h-16 mx-auto rounded-full mb-4">
         <h3 class="text-xl font-bold">Carlos Fernández</h3>
-        <p class="text-gray-300 mt-2">"Este proyecto nos ha mostrado lo que podemos lograr como comunidad."</p>
+        <p class="mt-2">"Este proyecto nos ha mostrado lo que podemos lograr como comunidad."</p>
       </div>
     </div>
   </div>
