@@ -11,8 +11,13 @@ import { RouterModule } from '@angular/router';
   styleUrl: './posts.component.css'
 })
 export class PostsComponent implements OnInit {
-  private apiService = inject(ApiService);
-  protected posts: IPost[] = []; 
+  private apiService;
+  protected posts: IPost[]; 
+
+  constructor() {
+    this.apiService = inject(ApiService);
+    this.posts = [];
+   }
 
   ngOnInit() {
     this.apiService.getPosts().subscribe(data => this.posts = data);
