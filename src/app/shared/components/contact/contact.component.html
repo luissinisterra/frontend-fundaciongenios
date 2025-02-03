@@ -12,18 +12,18 @@
                 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
-                        <input type="text" id="name" formControlName="name" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500">
+                        <input type="text" id="name" formControlName="name" [ngClass]="{'border-red-500': contactForm.get('name')?.invalid && contactForm.get('name')?.touched}"  class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500">
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
-                        <input type="email" id="email" formControlName="email" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500">
+                        <input type="email" id="email" formControlName="email" [ngClass]="{'border-red-500': contactForm.get('email')?.invalid && contactForm.get('email')?.touched}" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500">
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
-                        <textarea id="message" formControlName="message" rows="6" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500"></textarea>
+                        <textarea id="message" formControlName="message" rows="6" [ngClass]="{'border-red-500': contactForm.get('message')?.invalid && contactForm.get('message')?.touched}" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500"></textarea>
                     </div>
                     <div>
-                        <button [disabled]="contactForm.invalid" type="submit" class="w-full inline-flex justify-center bg-red-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-red-600 transition duration-300">
+                        <button [disabled]="contactForm.invalid" class="w-full inline-flex justify-center bg-red-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-red-600 transition duration-300">
                             Enviar Mensaje
                         </button>
                     </div>
