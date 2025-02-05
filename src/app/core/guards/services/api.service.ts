@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { inject, Injectable, OnInit } from '@angular/core';
 import { IPost } from '../models/post.interface';
 import { Observable } from 'rxjs';
 
@@ -8,8 +8,13 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private apiUrl: string = 'https://api.fundaciongenios.org/public/api/posts';
-  private http = inject(HttpClient);
+  private apiUrl: string;
+  private http;
+
+  constructor() {
+    this.apiUrl = 'https://api.fundaciongenios.org/public/api/posts';
+    this.http = inject(HttpClient);
+  }
 
   getPosts(): Observable<IPost[]> {
     return this.http.get<IPost[]>(this.apiUrl);

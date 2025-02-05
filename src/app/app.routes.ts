@@ -11,4 +11,5 @@ export const routes: Routes = [
     { path: 'details/:id', component: PostDetailsComponent, title: 'Post details page' },
     { path: 'contact', component: ContactComponent, title: 'Contact page' },
     { path: 'about-us', component: AboutComponent, title: 'About us page' },
+    { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
