@@ -11,13 +11,21 @@ import { CommonModule } from '@angular/common';
   styleUrl: './post-details.component.css'
 })
 export class PostDetailsComponent implements OnInit {
+
   apiService = inject(ApiService);
   route: ActivatedRoute = inject(ActivatedRoute);
-  post: IPost | undefined;
+  post?: IPost;
 
   ngOnInit() {
     const id = this.route.snapshot.params['id'];
-    this.apiService.getPostById(id).subscribe(data => this.post = data);
+    this.apiService.getPostById(id).subscribe({
+      next: (data) => {
+        this.post = data;
+      },
+      error: (e) => {
+        console.log(e);
+      }
+    });
   }
 
 }

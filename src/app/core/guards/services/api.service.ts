@@ -9,11 +9,10 @@ import { Observable } from 'rxjs';
 export class ApiService {
 
   private apiUrl: string;
-  private http;
+  private http = inject(HttpClient);
 
   constructor() {
     this.apiUrl = 'https://api.fundaciongenios.org/public/api/posts';
-    this.http = inject(HttpClient);
   }
 
   getPosts(): Observable<IPost[]> {

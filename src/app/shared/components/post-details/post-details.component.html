@@ -5,12 +5,12 @@
         <!-- Encabezado de la noticia -->
         <div class="mb-12">
           <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl lg:text-6xl">
-            {{post?.title}}
+            {{post.title}}
           </h1>
           <div class="mt-4 flex items-center text-sm text-gray-500 space-x-4">
             <span>Por <a href="#" class="font-medium text-red-500 hover:underline">Autor de la noticia</a></span>
             <span>|</span>
-            <span>Publicado el {{post?.created_at | date: 'mediumDate'}}</span>
+            <span>Publicado el {{post.created_at | date: 'mediumDate'}}</span>
           </div>
         </div>
     
@@ -22,7 +22,7 @@
         <!-- Contenido de la noticia -->
         <article class="prose prose-lg max-w-none">
           <p>
-            {{post?.description}}
+            {{post.description}}
           </p>
           <!-- <blockquote>
             "Esto es una cita destacada de la noticia para resaltar un punto importante o interesante del contenido."

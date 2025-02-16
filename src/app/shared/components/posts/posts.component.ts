@@ -20,6 +20,14 @@ export class PostsComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.apiService.getPosts().subscribe(data => this.posts = data);
+    this.apiService.getPosts().subscribe({
+      next: (data) => {
+        this.posts = data;
+      }, 
+      error: (err) => {
+        console.log(err);
+      }
+    });
   }
+  
 }
