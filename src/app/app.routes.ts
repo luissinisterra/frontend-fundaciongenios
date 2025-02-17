@@ -6,10 +6,10 @@ import { ContactComponent } from './shared/components/contact/contact.component'
 import { AboutComponent } from './shared/components/about/about.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent, title: 'Home page' },
-    { path: 'news', component: PostsComponent, title: 'Post page' },
-    { path: 'details/:id', component: PostDetailsComponent, title: 'Post details page' },
-    { path: 'contact', component: ContactComponent, title: 'Contact page' },
-    { path: 'about-us', component: AboutComponent, title: 'About us page' },
+    { path: '', component: HomeComponent, title: 'Fundació genios' },
+    { path: 'news', component: PostsComponent, title: 'Noticias' },
+    { path: 'details/:id', component: PostDetailsComponent, title: 'Detalles' },
+    { path: 'contact', component: ContactComponent, title: 'Contacto' },
+    { path: 'about-us', component: AboutComponent, title: 'Sobre nosotros' },
     { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
